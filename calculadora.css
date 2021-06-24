@@ -1,0 +1,77 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+@keyframes animacao{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.fundo{
+	animation: animacao 10s ease infinite;
+	background: linear-gradient(-45deg,#e366e1,#ff0062,#00bcff,#000000)no-repeat;
+	background-size: 300% 300%;
+	height: 100vh;
+	color: #fff;
+	font-family: monospace;
+	text-align: center;
+}
+
+.calculadora{
+	animation: animacao 10s ease infinite;
+	position: absolute;
+	background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab)no-repeat;
+	background-size: 300% 300%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.botao{
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	cursor: pointer;
+	animation-fill-mode: 
+	margin:3px;
+	background:border-box;
+	border: 1px solid linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+	color: #fff;
+}
+
+.botao:hover{
+	background:linear-gradient(-45deg,#23a6d5,#23d5ab,#ee7752);
+}
+
+#resultado{
+	width: 207px;
+	height: 30px;
+	margin: 5px;
+	font-size: 25px;
+	color: black;
+	text-align: right;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
